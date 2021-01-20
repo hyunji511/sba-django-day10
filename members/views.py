@@ -7,7 +7,15 @@ def login(req):
     if req.method == 'GET' :
         return render(req, 'login.html')
     elif req.method =='POST' :
-        return redirect('/')
+        useremail= req.POST.get('username',None)
+        email = req.POST.get('useremail',None)
+
+        err = {}
+        #딕셔너리 파일로 받음 : key와 value로
+
+        if not(useremail and username) :
+            err['err'] = '유효성이 잘못되었습니다.'
+            return render(req, 'login.html')
 
 def gu(req):
     num = req.GET.get('num','')
