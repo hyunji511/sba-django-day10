@@ -9,7 +9,7 @@ def index(req):
     return HttpResponse("<h1>version 1 : Hello World</h1>")
 
 def git(req):
-	return HttpResponce("<h2>git version</h2>")
+	return HttpResponse("<h2>git version</h2>")
 
 def test(req):
     return HttpResponse("<h2>Test</h2>")
