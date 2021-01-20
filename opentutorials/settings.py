@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'hyunfapp',
     'lms',
     'payments',
-    'members'
+    'members',
+    'lotto'
     ]
 
 MIDDLEWARE = [
