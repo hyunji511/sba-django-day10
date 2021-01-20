@@ -6,7 +6,7 @@ from .models import Members
 # Create your views here.
 def index(req):
     print(dir(req))
-    return HttpResponse("Hello World")
+    return HttpResponse("<h1>version 1 : Hello World</h1>")
 
 def test(req):
     return HttpResponse("<h2>Test</h2>")
